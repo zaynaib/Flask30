@@ -8,6 +8,7 @@ app = Flask(__name__)
 app.config.from_object(Config)
 
 #db object that represents the database
+#initalize the database and migrations tools for the flask app
 db = SQLAlchemy(app)
 migrate = Migrate(app,db)
 
